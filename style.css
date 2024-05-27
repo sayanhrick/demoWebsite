@@ -1,0 +1,287 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: --webkit-fill-available;
+    
+    
+}
+
+header{
+    display: flex;
+    background:  #2d2d2d;;
+    height: 5rem;
+}
+
+.leftNav{
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    color: #ffffff;
+    font-size: 1.0rem;
+}
+
+.rightNav{
+    display: inline-block;
+    text-align: right;
+    color: #ffffff;
+    margin-top: 1rem;
+    font-size: small;
+    margin-right: 3rem;
+}
+
+  a:hover{
+    
+    color: #ffffff;
+    text-decoration: none;
+    
+    font-size: 1rem;
+}
+li a:link{
+    color: #ffffff;
+    text-decoration: none;
+}
+li a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    padding: 1rem;
+}
+
+main{
+    
+    
+    
+}
+.mainSection{
+    display: flex;
+    flex-direction: row;
+    height: scroll;
+}
+
+.leftMain{
+    padding-top: 7rem;
+    padding-left: 3rem;
+    width: 50%;
+    height: auto;
+    background-color: #000000;
+    color: #ffffff;
+    font-family:Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    
+    
+}
+.line
+{
+    margin-top: 3rem;
+    width: 100%;
+    height: 0.1rem;
+    background: white;
+    border-radius: 1.3rem;
+    border: 1rem whitesmoke;
+    
+}
+
+.text{
+    display: flex;
+}
+
+
+.lorem{
+    color: whitesmoke;
+    font-size: 0.8rem;
+    width: 80%;
+    text-align: justify;
+    margin-top: 5rem;
+    margin-right: auto;
+}
+
+.explore{
+    margin-top: 3rem;
+    width: 20%;
+    background: white;
+    color: #000000;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.explore a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.explore a:visited{
+    color: black;
+    text-decoration: none;
+    
+}
+.explore a:hover{
+    color: black;
+    text-decoration: underline;
+  
+}
+
+.rightMain{
+    width: 60%;
+    display: flex;
+    
+}
+
+
+
+
+/* About Section */
+
+
+.aboutSection{
+    
+    height: 500px;
+    width: 100%;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    font-family:Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 3rem;
+    font-weight: 00;
+    padding-top: 7rem;
+    
+}
+
+.about_{
+    padding-left: 5rem;
+}
+
+.line1
+{
+    
+    margin-top: -3.5rem;
+    margin-left: 28rem;
+    width: 50%;
+    height: 0.1rem;
+    background: white;
+    border-radius: 1.3rem;
+    border: 1rem whitesmoke;
+    
+}
+
+.aboutText {
+    width: fit-content;
+    padding-top: 5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    font-weight: 300;
+    font-size: 1rem;
+
+}
+
+.aboutText p{
+    padding: auto;
+    margin: auto;
+}
+
+
+@media screen and (max-width:480px){
+        
+    *{
+        width: 100%;
+        height: --webkit-fill-available;
+        padding: 0;
+        
+    }
+
+    main{
+        
+        width: 100%;
+        height: fit-content;
+    }
+
+    .mainSection{
+        width: fit-content;
+        display: flex;
+        height: fit-content;
+    }
+
+    .leftMain{
+        font-size: 20px;
+    }
+
+    .leftMain .lorem{
+        font-size: 10px;
+    }
+
+    .explore{
+        margin-top: 1rem;
+        width: 20%;
+        background: white;
+        color: #000000;
+        font-size: 0.4rem;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+    
+    .explore a:link{
+        color: black;
+        text-decoration: none;
+        font-size: 0.4rem;
+    }
+    
+    .explore a:visited{
+        color: black;
+        text-decoration: none;
+        font-size: 0.4rem;
+    }
+    .explore a:hover{
+        color: black;
+        text-decoration: underline;
+        font-size: 0.4rem;
+    }
+    
+    .aboutSection{
+    
+        height: scroll;
+        width: 100%;
+        background-color: #2d2d2d;
+        color: #ffffff;
+        font-family:Georgia, 'Times New Roman', Times, sans-serif;
+        font-size: 3rem;
+        font-weight: 00;
+        padding-top: 7rem;
+        
+    }
+    
+    .about_{
+        padding-left: 5rem;
+    }
+    
+    .line1
+    {
+        
+        margin-top: -3.5rem;
+        margin-left: 15rem;
+        width: 50%;
+        height: 0.1rem;
+        background: white;
+        border-radius: 1.3rem;
+        border: 1rem whitesmoke;
+        
+    }
+    
+    .aboutText {
+        align-content: first baseline;
+        width: fit-content;
+        padding-top: 5rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        font-weight: 300;
+        font-size: 0.8rem;
+    
+    }
+}
