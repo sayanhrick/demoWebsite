@@ -23,7 +23,7 @@ header{
 }
 
 .rightNav{
-    display: inline-block;
+    display: inline;
     text-align: right;
     color: #ffffff;
     margin-top: 1rem;
@@ -35,7 +35,7 @@ header{
     
     color: #ffffff;
     text-decoration: none;
-    
+    transition: 0.1s;
     font-size: 1rem;
 }
 li a:link{
@@ -54,12 +54,13 @@ li{
     margin-right: 3rem;
     padding: 1rem;
 }
-
-main{
-    
-    
-    
+.checkbtn{
+    display: none;
 }
+#check{
+    display: none;
+}
+
 .mainSection{
     display: flex;
     flex-direction: row;
@@ -188,13 +189,119 @@ main{
 }
 
 
+
+ /* Contact View */
+
+#contact{
+    width: 100%;
+    height: 1000px;
+    background: #000000;
+    color: #ffffff;
+}
+.contactSection{
+    width: 80%;
+    align-content: center;
+    align-items: center;
+}
+.contactText{
+    font-size: 4rem;
+    font-family:Georgia, 'Times New Roman', Times, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-right: 4rem;
+    padding-top: 5rem;
+    text-align: right;
+}
+
+.line2{
+    margin-left: 4rem;
+    padding-left: 4rem;
+    
+    display: flex;
+    float: left;
+    border: 0.1rem solid white;
+    width: 50%;
+    background-color: #ffffff;
+}
+
+form{
+    background-color: #000000;
+    width: 100%;
+    padding-left: 8rem;
+    padding-top: 5rem;
+    padding-right: 8rem;
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+input{
+    
+    width: 40%;
+    height: 2rem;
+    background-color: #ffffff;
+    font-size: 1rem;
+    padding-left: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    border: #000000;
+    border-radius: 0.9rem;
+    text-align: start;
+}
+.divName label{
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.divEmail{
+    margin-top: 2rem;
+}
+
+.divEmail label{
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    
+}
+
+.divph{
+    margin-top: 2rem;
+}
+
+.divph label{
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.divMessag{
+    margin-top: 2rem;
+}
+
+.divMessag label{
+    height: 5rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.divMessag #message{
+    height: 6rem;
+}
+
+/* Responsive Functionality */
+
+
 @media screen and (max-width:480px){
         
     *{
+        
         width: 100%;
         height: --webkit-fill-available;
         padding: 0;
+        border: 0;
+       
         
+    }
+
+    header{
+        width: 100%;
     }
 
     main{
@@ -204,19 +311,22 @@ main{
     }
 
     .mainSection{
-        width: fit-content;
+        width: 100%;
         display: flex;
         height: fit-content;
     }
 
     .leftMain{
         font-size: 20px;
+        
     }
 
     .leftMain .lorem{
         font-size: 10px;
     }
 
+
+    
     .explore{
         margin-top: 1rem;
         width: 20%;
@@ -284,4 +394,59 @@ main{
         font-size: 0.8rem;
     
     }
+
+
+    /* navigation portion */
+    
+    
+    header{
+        width: 100%;
+        min-width: 100%;
+    }
+    .leftNav{
+        width: 60%;
+        display: flex;
+    }
+    .rightNav  {
+        width: 40%;
+        display: flex;
+        
+    }
+
+    nav li{
+        width: 100%;
+        display: none;
+    }
+    .checkbtn{
+        display: flex;
+        color: #ffffff;
+        background:#2d2d2d;
+        
+        
+    }
+    #check{
+        display: block;
+    }
+    
+    .checkbtn{
+        width: 3%;
+        height: 3%;
+        transform: rotate(0deg);
+        float: right;
+    }
+
+    .checkbtn::before{
+        transform: rotate(0deg);
+    }
+
+    .checkbtn:hover{
+        transform: rotate(90deg);
+        transition: 0.5s;
+        color: bisque;
+        padding-top: 4rem;
+    }
+    
+
+   
+
 }

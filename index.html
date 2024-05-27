@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     
     <title>Portfolio Sample</title>
@@ -13,13 +14,18 @@
             Adeline Palmartone
         </div>
         <div class="rightNav">
+            
             <nav>
+                
                 <ul>
                     <li><a href="#mainHome">Home</a></li>
                     <li><a href="#">Photo</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fa fa-align-justify" style="font-size:20px"></i>
+                    </label>
                     
                 </ul>
             </nav>
@@ -60,6 +66,41 @@
             </div>
         </section>
         
+        <section id="contact">
+            <div class="contactSection">
+                    <div class="contactText">
+                        <h1>Contact</h1><div class="line2"></div><div class="line3"></div>
+                       
+                    </div>
+
+                    <div class="formSection">
+                        <form action="">
+                            <div class="divName">
+                                <label for="name">Name</label><br><br>
+                                <input type="text" name="Name" id="name">
+                            </div>
+                            <div class="divEmail">
+                                <label for="email">Email</label><br><br>
+                                <input type="email" name="Email" id="email">
+                            </div>
+                            <div class="divph">
+                                <label for="number">Phone No</label><br><br>
+                                <input type="number" name="phNo" id="phNo">
+                            </div>
+                            <div class="divMessag">
+                                <label for="message">Message</label><br><br>
+                                <input type="text" name="Message" id="message">
+                                
+                            </div>
+
+                        </form>
+                    </div>
+                    
+            </div>
+        </section>
+
+
+
 
     </main>
 
